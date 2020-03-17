@@ -17,3 +17,5 @@ Route::get('/', function () {
 
 //View Only
 Route::view('/home', 'dashboard/home');
+
+Route::get('/testGuzzle', 'TestController@get');
