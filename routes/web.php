@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 //View Only
 Route::view('/home', 'dashboard/home');

@@ -11,25 +11,63 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/bootstrap/mdb.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/semantic-ui/semantic.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
+    <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet" />
 
+    <style>
+        body{
+            font-family: 'Exo 2', sans-serif;
+        }
+
+        .font-exo{
+            font-family: 'Exo 2', sans-serif;
+        }
+
+        div{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
 
     @yield('css_after')
 
+
+    @yield('js_before')
+
+</head>
+<body class="container-fluid">
+{{-- Header Photo --}}
+    <header class="row bg-dark d-flex justify-content-center align-items-center" style="height: 10% !important;">
+        <div class="col-md-2"></div>
+        <div class="col-5 col-md-4">
+            <a href="#">
+                <h2 class="text-light">Saranaku</h2>
+            </a>
+        </div>
+        <div class="col-2 col-md-2"></div>
+        <div class="col-5 col-md-2 d-flex justify-content-end">
+            <a href="#">
+                <button class="ui inverted button">Signin</button>
+            </a>
+        </div>
+        <div class="col-md-2"></div>
+    </header>
+
+    <section class="row h-50 notebook-girl-bg">
+        <div class="col-md-3"></div>
+        <div class="col-12 col-md-9 d-flex no-gutters">
+            <span class="align-self-end">
+                <h1 class="display-3 text-white font-exo animated fadeInUp">Susu</h1>
+                <h1 class="display-3 text-white font-exo animated fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;Kental</h1>
+                <h1 class="display-3 text-white font-exo animated fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manis</h1>
+            </span>
+        </div>
+    </section>
 
     <script type="text/javascript" src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/mdb.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/semantic.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/popper.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-    @yield('js_before')
-
-</head>
-<body class="container-fluid">
-{{-- Header Photo --}}
-    <header class="row" style="background-image: {{ asset('media/image/notebook-girl.jpg') }}">
-        <div class="col-12">
-            {{-- <img src="{{ asset('') }}" /> --}}
-        </div>
-    </header>
 </body>
 </html>
