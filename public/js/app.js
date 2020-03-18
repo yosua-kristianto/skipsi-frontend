@@ -19335,8 +19335,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! I:\ScriptC\saranaku\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! I:\ScriptC\saranaku\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/yosuakristianto_144/Documents/Scriptsi/skipsi-frontend/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/yosuakristianto_144/Documents/Scriptsi/skipsi-frontend/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
