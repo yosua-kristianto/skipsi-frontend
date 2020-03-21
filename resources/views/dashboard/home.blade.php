@@ -31,7 +31,11 @@
 
     @yield('css_after')
 
-
+    <script type="text/javascript" src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/semantic.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/popper.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/mdb.min.js') }}"></script>
     @yield('js_before')
 
 </head>
@@ -44,10 +48,12 @@
                 <h2 class="text-light">Saranaku</h2>
             </a>
         </div>
-        <div class="col-2 col-md-2"></div>
-        <div class="col-5 col-md-2 d-flex justify-content-end">
+        <div class="col-7 col-md-4 d-flex justify-content-end">
             <a href="#">
-                <button class="ui inverted button">Signin</button>
+                <button class="ui inverted button">Sign up</button>
+            </a>
+            <a href="/auth/login">
+                <button class="ui inverted button">Login</button>
             </a>
         </div>
         <div class="col-md-2"></div>
@@ -63,11 +69,5 @@
             </span>
         </div>
     </section>
-
-    <script type="text/javascript" src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/mdb.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/semantic.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/popper.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
 </body>
 </html>
