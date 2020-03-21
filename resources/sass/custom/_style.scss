@@ -9,6 +9,15 @@ $alternative-color-for-no-bg: #464646;
     background-color: $alternative-color-for-no-bg;
 }
 
+#pixabay-backdrop{
+    background-image: url("/media/image/hardwood-backdrop.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: $alternative-color-for-no-bg;
+}
+
 .h-10{
     height: 10% !important;
 }
@@ -72,3 +81,4 @@ $alternative-color-for-no-bg: #464646;
 .w-90{
     width: 90% !important;
 }
+
