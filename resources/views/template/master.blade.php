@@ -3,7 +3,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Home</title>
+    <title>Home - @yield('title')</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <title>Saranaku - Your management friend</title>
@@ -49,8 +49,59 @@
         </div>
     </div>
 
-    <button class="ui blue button" type="button" onclick="$('#spinner-loading').removeClass('d-none');">Huehuehuehue</button>
+    <div class="ui top vertical inverted sidebar labeled icon menu">
+        <a class="item">
+            <i class="home icon"></i>
+            Home
+        </a>
+        <a class="item">
+            <i class="user icon"></i>
+            Manage User
+        </a>
+        <a class="item">
+            <i class="shopping cart icon"></i>
+            Cashier
+        </a>
+        <a class="item">
+            <i class="clipboard list icon"></i>
+            Manage Stock
+        </a>
+        <a class="item">
+            <i class="money bill alternate outline icon"></i>
+            Finance
+        </a>
+    </div>
 
+
+
+    <div class="container-fluid pusher">
+        <div class="container">
+            <div class="ui inverted menu">
+                <button class="item ui primary button" onclick="exe()">
+                    <i class="th icon"></i>
+                </button>
+                <div class="header item">
+                    Saranaku
+                </div>
+                <div class="right menu">
+
+                    <a class="ui item">
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        @yield('content')
+    </div>
     @yield('js_after')
+
+
+
+    <script type="text/javascript">
+        function exe(){
+            $('.ui.labeled.icon.sidebar').sidebar('toggle');
+        }
+    </script>
 </body>
 </html>
