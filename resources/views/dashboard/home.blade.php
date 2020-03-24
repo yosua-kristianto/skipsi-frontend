@@ -62,12 +62,22 @@
     <section class="row h-50 notebook-girl-bg">
         <div class="col-md-3"></div>
         <div class="col-12 col-md-9 d-flex no-gutters">
-            <span class="align-self-end">
-                <h1 class="display-3 text-white font-exo animated fadeInUp">Susu</h1>
-                <h1 class="display-3 text-white font-exo animated fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;Kental</h1>
-                <h1 class="display-3 text-white font-exo animated fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manis</h1>
+            <span class="align-self-end align-self-md-center">
+                <h1 id="track" class="display-3 text-white font-exo invisible">Track</h1>
+                <h1 id="maximize" class="display-3 text-white font-exo invisible">&nbsp;&nbsp;Maximize</h1>
+                <h1 id="organize" class="display-3 text-white font-exo invisible">&nbsp;&nbsp;&nbsp;&nbsp;Organize</h1>
             </span>
+
+            <div class=""></div>
         </div>
     </section>
+
+    <section class="row h-50 ">
+        <div class="col-md-3"></div>
+
+    </section>
+
+
+    <script type="text/javascript" src="{{ asset('js/custom-scripts/dashboard/home.js')  }}"></script>
 </body>
 </html>
